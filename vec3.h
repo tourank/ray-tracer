@@ -80,7 +80,7 @@ inline vec3 operator*(const vec3 &v, double t) {
 }
 
 inline vec3 operator/(vec3 v, double t) {
-    return (1/t) v;
+    return (1/t) * v;
 }
 
 inline double dot(const vec3 &u, const vec3 &v) {
@@ -96,3 +96,4 @@ inline vec3 cross(const vec3 &u, const vec3 &v) {
 inline vec3 unit_vector(vec3 v) {
     return v / v.length();
 }
+
